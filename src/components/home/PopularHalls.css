@@ -17,9 +17,9 @@
 }
 
 .halls-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 @media (min-width: 768px) {

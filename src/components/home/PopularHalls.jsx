@@ -27,6 +27,30 @@ const popularHalls = [
     capacity: 100,
     isAvailable: false,
   },
+  {
+    id: "1",
+    name: "Auditorium",
+    image:
+      "https://plus.unsplash.com/premium_photo-1680807988328-7ba28ad24d9f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    capacity: 300,
+    isAvailable: true,
+  },
+  {
+    id: "2",
+    name: "Conference Hall B",
+    image:
+      "https://avatars.mds.yandex.net/i?id=60a168c7db30c60164df202202d585a2-5235791-images-thumbs&n=13https://avatars.mds.yandex.net/i?id=60a168c7db30c60164df202202d585a2-5235791-images-thumbs&n=13",
+    capacity: 200,
+    isAvailable: true,
+  },
+  {
+    id: "3",
+    name: "Seminar Room 102",
+    image:
+      "https://i.ytimg.com/vi/lKpqenrurHA/maxresdefault.jpg",
+    capacity: 100,
+    isAvailable: false,
+  },
 ];
 
 export default function PopularHalls() {
