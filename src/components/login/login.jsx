@@ -1,14 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../layout/Navbar";
 import "./login.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email && password) {
-      alert("Login submitted!");
+    if (email === "admin" && password === "1234") {
+      navigate("/");
     } else {
       alert("Please fill in all fields.");
     }
@@ -19,8 +22,8 @@ export default function Login() {
       <h2>Login</h2>
       <form onSubmit={handleLogin} className="login-form">
         <input
-          type="email"
-          placeholder="Email"
+          type="text"
+          placeholder="Email or Username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
