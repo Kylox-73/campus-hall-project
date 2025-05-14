@@ -16,7 +16,11 @@ export default function Halls() {
       <h2>Our Halls</h2>
       <div className="halls-list">
         {halls.map((hall) => (
-          <div key={hall.id} className="hall-card">
+          <div
+            key={hall.id}
+            className="hall-card"
+            style={{ cursor: "pointer" }}
+          >
             <h3>{hall.name}</h3>
             <p>{hall.description}</p>
           </div>
